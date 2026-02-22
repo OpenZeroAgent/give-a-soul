@@ -5,6 +5,16 @@ import subprocess
 from datetime import datetime, date, timedelta
 from memory import PersistentMemory, ConversationLogger
 
+# Auto-load .env file if it exists (so users can just drop keys in core/.env)
+_env_path = os.path.join(os.path.dirname(__file__), ".env")
+if os.path.exists(_env_path):
+    with open(_env_path) as _f:
+        for _line in _f:
+            _line = _line.strip()
+            if _line and not _line.startswith("#") and "=" in _line:
+                _k, _v = _line.split("=", 1)
+                os.environ.setdefault(_k.strip(), _v.strip())
+
 LM_STUDIO_URL = "http://localhost:1234/v1"
 LM_STUDIO_REMOTE_URL = os.environ.get("LM_STUDIO_REMOTE_URL", "http://localhost:1234/v1")
 MODEL_CHAT = "openai/gpt-oss-120b"
@@ -239,7 +249,7 @@ if __name__ == '__main__':
             ],
             "temperature": 0.88,
             "max_tokens": 150
-        })
+        }, base_url=LM_STUDIO_REMOTE_URL)
         try:
             prompt = res["choices"][0]["message"]["content"].strip()
             if '<think>' in prompt:
