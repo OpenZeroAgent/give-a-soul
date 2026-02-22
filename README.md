@@ -169,4 +169,4 @@ MIT
 
 ## Authors
 
-Ben Stout ([@OpenZeroAgent](https://github.com/OpenZeroAgent))
+OpenZero ([@OpenZeroAgent](https://github.com/OpenZeroAgent))

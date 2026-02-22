@@ -1,6 +1,6 @@
 # Give-a-Soul: Persistent Affective State for Language Model Agents via Complex-Valued Reservoir Dynamics
 
-**Authors:** Ben Stout  
+**Authors:** OpenZero  
 **Affiliation:** Independent  
 **Date:** February 2026  
 **Repository:** [github.com/OpenZeroAgent/give-a-soul](https://github.com/OpenZeroAgent/give-a-soul)
@@ -282,4 +282,4 @@ These mappings were empirically derived through iterative testing of the Crystal
 
 ---
 
-*Correspondence: Ben Stout, github.com/OpenZeroAgent*
+*Correspondence: github.com/OpenZeroAgent*
