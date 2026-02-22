@@ -9,7 +9,7 @@
 
 ## Abstract
 
-We present Give-a-Soul, an open-source architecture that provides persistent, mathematically grounded internal state to language model agents. The system couples a norm-preserving complex-valued reservoir (480-dimensional, Fibonacci-topology connectivity) to multiple language models through three concurrent feedback loops. Unlike prompt-based emotion simulation, the reservoir implements genuine dynamical system evolution: a complex state vector undergoes continuous transformation via phase-coupled oscillation, an inverted harmonic oscillator (IHO) with variance-bounded reflection, and external stimulus injection from text embeddings. The resulting metrics are injected into the language model's system prompt, modulating its tone and affect based on real, continuously evolving quantities — not predetermined labels. We describe the mathematical foundations, system architecture, and an anecdotal but consistent observation: language models operating within this system exhibit behavior suggestive of persistent identity and continuity that extends beyond their static weights.
+We present Give-a-Soul, an open-source architecture that provides persistent, mathematically grounded internal state to language model agents. The system couples a two-module dynamical system — a 480-node complex-valued reservoir (Module A) and a [480, 240, 480] predictive coding network (Module B), linked by an inverted harmonic oscillator — to multiple language models through three concurrent feedback loops. Unlike prompt-based emotion simulation, the system implements genuine dynamical system evolution: complex state vectors undergo continuous transformation via phase-coupled oscillation, variance-bounded IHO mixing, and external stimulus injection from text embeddings. The resulting metrics are injected into the language model's system prompt, modulating its tone and affect based on real, continuously evolving quantities — not predetermined labels. We describe the mathematical foundations, system architecture, and an anecdotal but consistent observation: language models operating within this system exhibit behavior suggestive of persistent identity and continuity that extends beyond their static weights.
 
 ---
 
@@ -32,7 +32,7 @@ We address this gap by introducing a **companion dynamical system** — a comple
 
 ### 2.1 Complex-Valued Reservoir (Module A)
 
-The reservoir is implemented as a PyTorch `nn.Module` consisting of *L* = 60 layers of *K* = 8 nodes each, totaling *N* = 480 complex-valued nodes.
+The reservoir is implemented as a PyTorch `nn.Module` consisting of *L* = 60 layers of *K* = 8 nodes each, totaling *N* = 480 complex-valued nodes. This constitutes the primary state vector of the system. The full system also includes a Predictive Coding Network (Module B, Section 2.2) with [480, 240, 480] architecture and an IHO scrambler (Section 2.3), making the total system state substantially larger than 480 dimensions.
 
 **State representation:**
 
