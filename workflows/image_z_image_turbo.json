@@ -1,0 +1,138 @@
+{
+  "9": {
+    "inputs": {
+      "filename_prefix": "OpenZero_Dream_Cycle",
+      "images": [
+        "65",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "63": {
+    "inputs": {
+      "vae_name": "ae.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "64": {
+    "inputs": {
+      "conditioning": [
+        "67",
+        0
+      ]
+    },
+    "class_type": "ConditioningZeroOut",
+    "_meta": {
+      "title": "ConditioningZeroOut"
+    }
+  },
+  "65": {
+    "inputs": {
+      "samples": [
+        "69",
+        0
+      ],
+      "vae": [
+        "63",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "67": {
+    "inputs": {
+      "text": "Deep learning visualization of a thought, Awakened — Full Audit Mode 🦾 atmosphere, masterpiece, 8k, highly detailed, surreal, abstract",
+      "clip": [
+        "72",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "68": {
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "batch_size": 1
+    },
+    "class_type": "EmptySD3LatentImage",
+    "_meta": {
+      "title": "EmptySD3LatentImage"
+    }
+  },
+  "69": {
+    "inputs": {
+      "seed": 204968310,
+      "steps": 4,
+      "cfg": 1,
+      "sampler_name": "res_multistep",
+      "scheduler": "simple",
+      "denoise": 1,
+      "model": [
+        "70",
+        0
+      ],
+      "positive": [
+        "67",
+        0
+      ],
+      "negative": [
+        "64",
+        0
+      ],
+      "latent_image": [
+        "68",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "70": {
+    "inputs": {
+      "shift": 3,
+      "model": [
+        "71",
+        0
+      ]
+    },
+    "class_type": "ModelSamplingAuraFlow",
+    "_meta": {
+      "title": "ModelSamplingAuraFlow"
+    }
+  },
+  "71": {
+    "inputs": {
+      "unet_name": "z_image_turbo-Q5_K_M.gguf"
+    },
+    "class_type": "UnetLoaderGGUF",
+    "_meta": {
+      "title": "Unet Loader (GGUF)"
+    }
+  },
+  "72": {
+    "inputs": {
+      "clip_name": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "type": "stable_diffusion"
+    },
+    "class_type": "CLIPLoaderGGUF",
+    "_meta": {
+      "title": "CLIPLoader (GGUF)"
+    }
+  }
+}

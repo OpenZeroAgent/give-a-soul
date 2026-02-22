@@ -1,0 +1,134 @@
+{
+  "9": {
+    "inputs": {
+      "filename_prefix": "z-image-turbo",
+      "images": [
+        "65",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "63": {
+    "inputs": {
+      "vae_name": "ae.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "64": {
+    "inputs": {
+      "conditioning": [
+        "67",
+        0
+      ]
+    },
+    "class_type": "ConditioningZeroOut",
+    "_meta": {
+      "title": "ConditioningZeroOut"
+    }
+  },
+  "65": {
+    "inputs": {
+      "samples": [
+        "69",
+        0
+      ],
+      "vae": [
+        "63",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "67": {
+    "inputs": {
+      "text": "Latina female with thick wavy hair, harbor boats and pastel houses behind. Breezy seaside light, warm tones, cinematic close-up. ",
+      "clip": [
+        "72",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "68": {
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "batch_size": 1
+    },
+    "class_type": "EmptySD3LatentImage",
+    "_meta": {
+      "title": "EmptySD3LatentImage"
+    }
+  },
+  "69": {
+    "inputs": {
+      "seed": 0,
+      "steps": 9,
+      "cfg": 1,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "simple",
+      "denoise": 1,
+      "model": [
+        "71",
+        0
+      ],
+      "positive": [
+        "67",
+        0
+      ],
+      "negative": [
+        "64",
+        0
+      ],
+      "latent_image": [
+        "68",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "70": {
+    "inputs": {
+      "shift": 3
+    },
+    "class_type": "ModelSamplingAuraFlow",
+    "_meta": {
+      "title": "ModelSamplingAuraFlow"
+    }
+  },
+  "71": {
+    "inputs": {
+      "unet_name": "z_image_turbo-Q5_K_M.gguf"
+    },
+    "class_type": "UnetLoaderGGUF",
+    "_meta": {
+      "title": "Unet Loader (GGUF)"
+    }
+  },
+  "72": {
+    "inputs": {
+      "clip_name": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "type": "lumina2"
+    },
+    "class_type": "CLIPLoaderGGUF",
+    "_meta": {
+      "title": "CLIPLoader (GGUF)"
+    }
+  }
+}

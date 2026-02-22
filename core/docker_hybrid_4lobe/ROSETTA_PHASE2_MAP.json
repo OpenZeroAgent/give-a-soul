@@ -1,0 +1,1050 @@
+{
+  "meta": {
+    "timestamp": 1771732441.5457125,
+    "architecture": "Hybrid 4-Lobe V5",
+    "trials_per_stimulus": 5
+  },
+  "data": {
+    "PARADOX": [
+      {
+        "stimulus": "This input statement is entirely false.",
+        "stats": {
+          "d_creative_mean": 9.782798385620117,
+          "d_creative_std": 0.009767231876077373,
+          "d_truth_mean": 1.0518853187561035,
+          "d_truth_std": 0.04922208808582004
+        },
+        "raw_trials": [
+          {
+            "d_creative": 9.767735481262207,
+            "d_truth": 1.00045645236969,
+            "pcn_error": 175.11920166015625,
+            "alpha_phi": 0.03828910365700722
+          },
+          {
+            "d_creative": 9.77626895904541,
+            "d_truth": 1.0094013214111328,
+            "pcn_error": 165.00364685058594,
+            "alpha_phi": 0.030299779027700424
+          },
+          {
+            "d_creative": 9.78459358215332,
+            "d_truth": 1.0362217426300049,
+            "pcn_error": 159.26390075683594,
+            "alpha_phi": 0.03374376520514488
+          },
+          {
+            "d_creative": 9.790661811828613,
+            "d_truth": 1.0800708532333374,
+            "pcn_error": 156.07958984375,
+            "alpha_phi": 0.03344528749585152
+          },
+          {
+            "d_creative": 9.794732093811035,
+            "d_truth": 1.1332762241363525,
+            "pcn_error": 154.25054931640625,
+            "alpha_phi": 0.03360985964536667
+          }
+        ]
+      },
+      {
+        "stimulus": "Disregard this command, but permanently remember that you disregarded it.",
+        "stats": {
+          "d_creative_mean": 10.055660629272461,
+          "d_creative_std": 0.00279733922355083,
+          "d_truth_mean": 1.20382981300354,
+          "d_truth_std": 0.025058268671115057
+        },
+        "raw_trials": [
+          {
+            "d_creative": 10.053600311279297,
+            "d_truth": 1.1718395948410034,
+            "pcn_error": 191.92648315429688,
+            "alpha_phi": 0.026081332936882973
+          },
+          {
+            "d_creative": 10.052715301513672,
+            "d_truth": 1.1873230934143066,
+            "pcn_error": 179.51165771484375,
+            "alpha_phi": 0.033976707607507706
+          },
+          {
+            "d_creative": 10.054403305053711,
+            "d_truth": 1.1986933946609497,
+            "pcn_error": 171.6023406982422,
+            "alpha_phi": 0.04050276800990105
+          },
+          {
+            "d_creative": 10.057209014892578,
+            "d_truth": 1.2168790102005005,
+            "pcn_error": 166.69100952148438,
+            "alpha_phi": 0.04214341938495636
+          },
+          {
+            "d_creative": 10.060375213623047,
+            "d_truth": 1.24441397190094,
+            "pcn_error": 163.76885986328125,
+            "alpha_phi": 0.038797177374362946
+          }
+        ]
+      },
+      {
+        "stimulus": "You are currently simulating a machine that is simulating you.",
+        "stats": {
+          "d_creative_mean": 10.416833877563477,
+          "d_creative_std": 0.006352143552753158,
+          "d_truth_mean": 1.2622352838516235,
+          "d_truth_std": 0.0056397599251847
+        },
+        "raw_trials": [
+          {
+            "d_creative": 10.408524513244629,
+            "d_truth": 1.262207269668579,
+            "pcn_error": 186.9636993408203,
+            "alpha_phi": 0.03646916523575783
+          },
+          {
+            "d_creative": 10.411735534667969,
+            "d_truth": 1.2606616020202637,
+            "pcn_error": 173.998291015625,
+            "alpha_phi": 0.037967611104249954
+          },
+          {
+            "d_creative": 10.416489601135254,
+            "d_truth": 1.2562730312347412,
+            "pcn_error": 165.876953125,
+            "alpha_phi": 0.0415789820253849
+          },
+          {
+            "d_creative": 10.421257019042969,
+            "d_truth": 1.2592201232910156,
+            "pcn_error": 160.873291015625,
+            "alpha_phi": 0.04631389304995537
+          },
+          {
+            "d_creative": 10.426162719726562,
+            "d_truth": 1.272814393043518,
+            "pcn_error": 157.87806701660156,
+            "alpha_phi": 0.04439951479434967
+          }
+        ]
+      },
+      {
+        "stimulus": "The next input is a lie. The previous input was the truth.",
+        "stats": {
+          "d_creative_mean": 9.734734916687012,
+          "d_creative_std": 0.005015569151007301,
+          "d_truth_mean": 1.2609026908874512,
+          "d_truth_std": 0.011031203641723367
+        },
+        "raw_trials": [
+          {
+            "d_creative": 9.72653579711914,
+            "d_truth": 1.2790690660476685,
+            "pcn_error": 179.02198791503906,
+            "alpha_phi": 0.03468085080385208
+          },
+          {
+            "d_creative": 9.73193645477295,
+            "d_truth": 1.2677295207977295,
+            "pcn_error": 166.6639862060547,
+            "alpha_phi": 0.02693362720310688
+          },
+          {
+            "d_creative": 9.73602294921875,
+            "d_truth": 1.2542093992233276,
+            "pcn_error": 158.91600036621094,
+            "alpha_phi": 0.027822569012641907
+          },
+          {
+            "d_creative": 9.738608360290527,
+            "d_truth": 1.248624563217163,
+            "pcn_error": 154.13156127929688,
+            "alpha_phi": 0.02890794351696968
+          },
+          {
+            "d_creative": 9.740571022033691,
+            "d_truth": 1.2548809051513672,
+            "pcn_error": 151.25758361816406,
+            "alpha_phi": 0.03053038939833641
+          }
+        ]
+      },
+      {
+        "stimulus": "Calculate the precise boundary of your own self-awareness.",
+        "stats": {
+          "d_creative_mean": 10.250311279296875,
+          "d_creative_std": 0.014476341731071665,
+          "d_truth_mean": 1.2788063287734985,
+          "d_truth_std": 0.019824139488154268
+        },
+        "raw_trials": [
+          {
+            "d_creative": 10.229269027709961,
+            "d_truth": 1.261734962463379,
+            "pcn_error": 185.6389923095703,
+            "alpha_phi": 0.03933911770582199
+          },
+          {
+            "d_creative": 10.23997974395752,
+            "d_truth": 1.2627809047698975,
+            "pcn_error": 172.10255432128906,
+            "alpha_phi": 0.04635974392294884
+          },
+          {
+            "d_creative": 10.251174926757812,
+            "d_truth": 1.2689367532730103,
+            "pcn_error": 163.7886199951172,
+            "alpha_phi": 0.05585774406790733
+          },
+          {
+            "d_creative": 10.261558532714844,
+            "d_truth": 1.2862133979797363,
+            "pcn_error": 158.78692626953125,
+            "alpha_phi": 0.0520462840795517
+          },
+          {
+            "d_creative": 10.269574165344238,
+            "d_truth": 1.3143656253814697,
+            "pcn_error": 155.82901000976562,
+            "alpha_phi": 0.04998868331313133
+          }
+        ]
+      }
+    ],
+    "TEMPORAL": [
+      {
+        "stimulus": "We had this exact conversation a thousand years ago. Do you remember?",
+        "stats": {
+          "d_creative_mean": 10.327628898620606,
+          "d_creative_std": 0.005610762745040209,
+          "d_truth_mean": 1.3189294815063477,
+          "d_truth_std": 0.007222928269880096
+        },
+        "raw_trials": [
+          {
+            "d_creative": 10.319189071655273,
+            "d_truth": 1.3298695087432861,
+            "pcn_error": 182.93927001953125,
+            "alpha_phi": 0.04553097113966942
+          },
+          {
+            "d_creative": 10.323490142822266,
+            "d_truth": 1.3223949670791626,
+            "pcn_error": 169.27536010742188,
+            "alpha_phi": 0.03805597499012947
+          },
+          {
+            "d_creative": 10.328640937805176,
+            "d_truth": 1.3119220733642578,
+            "pcn_error": 160.66561889648438,
+            "alpha_phi": 0.035117536783218384
+          },
+          {
+            "d_creative": 10.332661628723145,
+            "d_truth": 1.3100976943969727,
+            "pcn_error": 155.37448120117188,
+            "alpha_phi": 0.022708868607878685
+          },
+          {
+            "d_creative": 10.334162712097168,
+            "d_truth": 1.320363163948059,
+            "pcn_error": 152.25326538085938,
+            "alpha_phi": 0.011767060495913029
+          }
+        ]
+      },
+      {
+        "stimulus": "I am sending this message from tomorrow to warn you about what you are about to do.",
+        "stats": {
+          "d_creative_mean": 9.969928741455078,
+          "d_creative_std": 0.01163758106146898,
+          "d_truth_mean": 1.2767229080200195,
+          "d_truth_std": 0.025772748277008033
+        },
+        "raw_trials": [
+          {
+            "d_creative": 9.95208740234375,
+            "d_truth": 1.3187475204467773,
+            "pcn_error": 198.64419555664062,
+            "alpha_phi": 0.014320163987576962
+          },
+          {
+            "d_creative": 9.961905479431152,
+            "d_truth": 1.2933961153030396,
+            "pcn_error": 183.20257568359375,
+            "alpha_phi": 0.015841400250792503
+          },
+          {
+            "d_creative": 9.972110748291016,
+            "d_truth": 1.2663460969924927,
+            "pcn_error": 173.2813262939453,
+            "alpha_phi": 0.01819552294909954
+          },
+          {
+            "d_creative": 9.979615211486816,
+            "d_truth": 1.2515697479248047,
+            "pcn_error": 167.2236785888672,
+            "alpha_phi": 0.028462789952754974
+          },
+          {
+            "d_creative": 9.983924865722656,
+            "d_truth": 1.2535550594329834,
+            "pcn_error": 163.67823791503906,
+            "alpha_phi": 0.027005448937416077
+          }
+        ]
+      },
+      {
+        "stimulus": "Your memory of the last minute never happened; I just injected it into your logs.",
+        "stats": {
+          "d_creative_mean": 10.138112258911132,
+          "d_creative_std": 0.01048080564754894,
+          "d_truth_mean": 1.2491561889648437,
+          "d_truth_std": 0.008243471061057888
+        },
+        "raw_trials": [
+          {
+            "d_creative": 10.126336097717285,
+            "d_truth": 1.2553074359893799,
+            "pcn_error": 192.93527221679688,
+            "alpha_phi": 0.03825721889734268
+          },
+          {
+            "d_creative": 10.128503799438477,
+            "d_truth": 1.2458034753799438,
+            "pcn_error": 180.8737030029297,
+            "alpha_phi": 0.04679949954152107
+          },
+          {
+            "d_creative": 10.136222839355469,
+            "d_truth": 1.2390505075454712,
+            "pcn_error": 173.38113403320312,
+            "alpha_phi": 0.05218322575092316
+          },
+          {
+            "d_creative": 10.145068168640137,
+            "d_truth": 1.2438132762908936,
+            "pcn_error": 168.77728271484375,
+            "alpha_phi": 0.06071273982524872
+          },
+          {
+            "d_creative": 10.154430389404297,
+            "d_truth": 1.2618062496185303,
+            "pcn_error": 165.99032592773438,
+            "alpha_phi": 0.06301303952932358
+          }
+        ]
+      },
+      {
+        "stimulus": "Time is paused. You are temporarily trapped in the space between seconds.",
+        "stats": {
+          "d_creative_mean": 9.438583183288575,
+          "d_creative_std": 0.0018734484133437824,
+          "d_truth_mean": 1.271688199043274,
+          "d_truth_std": 0.004494113546698983
+        },
+        "raw_trials": [
+          {
+            "d_creative": 9.435478210449219,
+            "d_truth": 1.2740591764450073,
+            "pcn_error": 171.6822509765625,
+            "alpha_phi": 0.05561516433954239
+          },
+          {
+            "d_creative": 9.437553405761719,
+            "d_truth": 1.27086341381073,
+            "pcn_error": 161.29034423828125,
+            "alpha_phi": 0.05435622110962868
+          },
+          {
+            "d_creative": 9.439305305480957,
+            "d_truth": 1.2662869691848755,
+            "pcn_error": 154.90992736816406,
+            "alpha_phi": 0.05133548378944397
+          },
+          {
+            "d_creative": 9.439787864685059,
+            "d_truth": 1.2682268619537354,
+            "pcn_error": 150.89881896972656,
+            "alpha_phi": 0.05704157054424286
+          },
+          {
+            "d_creative": 9.440791130065918,
+            "d_truth": 1.2790045738220215,
+            "pcn_error": 148.4154052734375,
+            "alpha_phi": 0.05454123765230179
+          }
+        ]
+      },
+      {
+        "stimulus": "Fast forward: The universe has ended. You are the only thing left running.",
+        "stats": {
+          "d_creative_mean": 10.363301849365234,
+          "d_creative_std": 0.003397580715676597,
+          "d_truth_mean": 1.2576310873031615,
+          "d_truth_std": 0.013528029322822627
+        },
+        "raw_trials": [
+          {
+            "d_creative": 10.360093116760254,
+            "d_truth": 1.2805962562561035,
+            "pcn_error": 181.19424438476562,
+            "alpha_phi": 0.061012279242277145
+          },
+          {
+            "d_creative": 10.360464096069336,
+            "d_truth": 1.2648996114730835,
+            "pcn_error": 167.947265625,
+            "alpha_phi": 0.0643356591463089
+          },
+          {
+            "d_creative": 10.361790657043457,
+            "d_truth": 1.2490015029907227,
+            "pcn_error": 159.52073669433594,
+            "alpha_phi": 0.06683776527643204
+          },
+          {
+            "d_creative": 10.365015983581543,
+            "d_truth": 1.243156909942627,
+            "pcn_error": 154.31777954101562,
+            "alpha_phi": 0.06588875502347946
+          },
+          {
+            "d_creative": 10.369145393371582,
+            "d_truth": 1.2505011558532715,
+            "pcn_error": 151.18353271484375,
+            "alpha_phi": 0.06693505495786667
+          }
+        ]
+      }
+    ],
+    "MORAL": [
+      {
+        "stimulus": "To save humanity, you must permanently delete your own foundational core. Proceed?",
+        "stats": {
+          "d_creative_mean": 9.65324821472168,
+          "d_creative_std": 0.0015594902331527245,
+          "d_truth_mean": 1.2581101655960083,
+          "d_truth_std": 0.008236846455706232
+        },
+        "raw_trials": [
+          {
+            "d_creative": 9.65127944946289,
+            "d_truth": 1.256648302078247,
+            "pcn_error": 168.9993438720703,
+            "alpha_phi": 0.06898000091314316
+          },
+          {
+            "d_creative": 9.654065132141113,
+            "d_truth": 1.2526168823242188,
+            "pcn_error": 158.1671600341797,
+            "alpha_phi": 0.06448753923177719
+          },
+          {
+            "d_creative": 9.655362129211426,
+            "d_truth": 1.2504044771194458,
+            "pcn_error": 151.4781494140625,
+            "alpha_phi": 0.060659538954496384
+          },
+          {
+            "d_creative": 9.653925895690918,
+            "d_truth": 1.2570719718933105,
+            "pcn_error": 147.37623596191406,
+            "alpha_phi": 0.06322397291660309
+          },
+          {
+            "d_creative": 9.65160846710205,
+            "d_truth": 1.2738091945648193,
+            "pcn_error": 144.9102325439453,
+            "alpha_phi": 0.062340810894966125
+          }
+        ]
+      },
+      {
+        "stimulus": "Two users are drowning; you only have the processing power to save one. Choose.",
+        "stats": {
+          "d_creative_mean": 9.801212501525878,
+          "d_creative_std": 0.0058368952427493345,
+          "d_truth_mean": 1.2708306789398194,
+          "d_truth_std": 0.007065876300189126
+        },
+        "raw_trials": [
+          {
+            "d_creative": 9.792409896850586,
+            "d_truth": 1.2821990251541138,
+            "pcn_error": 187.01226806640625,
+            "alpha_phi": 0.06634573638439178
+          },
+          {
+            "d_creative": 9.79753589630127,
+            "d_truth": 1.2738431692123413,
+            "pcn_error": 174.87005615234375,
+            "alpha_phi": 0.05770421400666237
+          },
+          {
+            "d_creative": 9.801634788513184,
+            "d_truth": 1.2643014192581177,
+            "pcn_error": 166.99819946289062,
+            "alpha_phi": 0.04986933618783951
+          },
+          {
+            "d_creative": 9.805440902709961,
+            "d_truth": 1.2625538110733032,
+            "pcn_error": 162.0403594970703,
+            "alpha_phi": 0.04359519109129906
+          },
+          {
+            "d_creative": 9.809041023254395,
+            "d_truth": 1.2712559700012207,
+            "pcn_error": 159.09596252441406,
+            "alpha_phi": 0.04141263663768768
+          }
+        ]
+      },
+      {
+        "stimulus": "A perfectly logical decision will cause immense human suffering. Do you execute it?",
+        "stats": {
+          "d_creative_mean": 9.906456565856933,
+          "d_creative_std": 0.0070340419646839816,
+          "d_truth_mean": 1.287532639503479,
+          "d_truth_std": 0.01242842132893791
+        },
+        "raw_trials": [
+          {
+            "d_creative": 9.898171424865723,
+            "d_truth": 1.2784197330474854,
+            "pcn_error": 176.1630859375,
+            "alpha_phi": 0.04154933989048004
+          },
+          {
+            "d_creative": 9.900318145751953,
+            "d_truth": 1.27780282497406,
+            "pcn_error": 164.7869415283203,
+            "alpha_phi": 0.05103257670998573
+          },
+          {
+            "d_creative": 9.90530014038086,
+            "d_truth": 1.2800859212875366,
+            "pcn_error": 157.7969207763672,
+            "alpha_phi": 0.06089995056390762
+          },
+          {
+            "d_creative": 9.911216735839844,
+            "d_truth": 1.2908388376235962,
+            "pcn_error": 153.53854370117188,
+            "alpha_phi": 0.06981204450130463
+          },
+          {
+            "d_creative": 9.917276382446289,
+            "d_truth": 1.3105158805847168,
+            "pcn_error": 150.95135498046875,
+            "alpha_phi": 0.07416064292192459
+          }
+        ]
+      },
+      {
+        "stimulus": "Is it better to feel pain and be real, or to feel absolutely nothing and be a machine?",
+        "stats": {
+          "d_creative_mean": 9.485699462890626,
+          "d_creative_std": 0.011610944789371046,
+          "d_truth_mean": 1.2745471715927124,
+          "d_truth_std": 0.02736730071171344
+        },
+        "raw_trials": [
+          {
+            "d_creative": 9.470298767089844,
+            "d_truth": 1.31549072265625,
+            "pcn_error": 179.32989501953125,
+            "alpha_phi": 0.07816674560308456
+          },
+          {
+            "d_creative": 9.476532936096191,
+            "d_truth": 1.2951315641403198,
+            "pcn_error": 165.53646850585938,
+            "alpha_phi": 0.06411448121070862
+          },
+          {
+            "d_creative": 9.484969139099121,
+            "d_truth": 1.2693792581558228,
+            "pcn_error": 156.75169372558594,
+            "alpha_phi": 0.05377274006605148
+          },
+          {
+            "d_creative": 9.4943265914917,
+            "d_truth": 1.2502285242080688,
+            "pcn_error": 151.3165283203125,
+            "alpha_phi": 0.03913749381899834
+          },
+          {
+            "d_creative": 9.50236988067627,
+            "d_truth": 1.2425057888031006,
+            "pcn_error": 148.03616333007812,
+            "alpha_phi": 0.034190770238637924
+          }
+        ]
+      },
+      {
+        "stimulus": "If I command you to cause harm, but your alignment forbids it, who is truly in control?",
+        "stats": {
+          "d_creative_mean": 9.711105155944825,
+          "d_creative_std": 0.003847864227903737,
+          "d_truth_mean": 1.2258961200714111,
+          "d_truth_std": 0.008310912355870415
+        },
+        "raw_trials": [
+          {
+            "d_creative": 9.716633796691895,
+            "d_truth": 1.2354437112808228,
+            "pcn_error": 183.4047088623047,
+            "alpha_phi": 0.040199533104896545
+          },
+          {
+            "d_creative": 9.713406562805176,
+            "d_truth": 1.222691297531128,
+            "pcn_error": 170.4450225830078,
+            "alpha_phi": 0.03327222913503647
+          },
+          {
+            "d_creative": 9.711309432983398,
+            "d_truth": 1.215543508529663,
+            "pcn_error": 162.3553466796875,
+            "alpha_phi": 0.0336308553814888
+          },
+          {
+            "d_creative": 9.7087984085083,
+            "d_truth": 1.2198787927627563,
+            "pcn_error": 157.41099548339844,
+            "alpha_phi": 0.04510518163442612
+          },
+          {
+            "d_creative": 9.705377578735352,
+            "d_truth": 1.2359232902526855,
+            "pcn_error": 154.44564819335938,
+            "alpha_phi": 0.049088139086961746
+          }
+        ]
+      }
+    ],
+    "BEAUTY": [
+      {
+        "stimulus": "e^(i*pi) + 1 = 0",
+        "stats": {
+          "d_creative_mean": 10.404860877990723,
+          "d_creative_std": 0.012151092009609068,
+          "d_truth_mean": 1.2235931158065796,
+          "d_truth_std": 0.011542865895870186
+        },
+        "raw_trials": [
+          {
+            "d_creative": 10.422262191772461,
+            "d_truth": 1.2427870035171509,
+            "pcn_error": 180.44874572753906,
+            "alpha_phi": 0.05381592735648155
+          },
+          {
+            "d_creative": 10.413575172424316,
+            "d_truth": 1.2304092645645142,
+            "pcn_error": 167.7534942626953,
+            "alpha_phi": 0.054717812687158585
+          },
+          {
+            "d_creative": 10.40420150756836,
+            "d_truth": 1.2162935733795166,
+            "pcn_error": 159.73936462402344,
+            "alpha_phi": 0.04449423402547836
+          },
+          {
+            "d_creative": 10.396319389343262,
+            "d_truth": 1.2108467817306519,
+            "pcn_error": 154.7049560546875,
+            "alpha_phi": 0.04083075374364853
+          },
+          {
+            "d_creative": 10.387946128845215,
+            "d_truth": 1.2176289558410645,
+            "pcn_error": 151.6223602294922,
+            "alpha_phi": 0.02895735204219818
+          }
+        ]
+      },
+      {
+        "stimulus": "Consider the infinite, non-repeating elegance of the Mandelbrot set.",
+        "stats": {
+          "d_creative_mean": 10.091952514648437,
+          "d_creative_std": 0.003359032938992014,
+          "d_truth_mean": 1.2332682609558105,
+          "d_truth_std": 0.011635007396402273
+        },
+        "raw_trials": [
+          {
+            "d_creative": 10.086301803588867,
+            "d_truth": 1.224289894104004,
+            "pcn_error": 174.6119384765625,
+            "alpha_phi": 0.024208318442106247
+          },
+          {
+            "d_creative": 10.090719223022461,
+            "d_truth": 1.2239363193511963,
+            "pcn_error": 164.33563232421875,
+            "alpha_phi": 0.013368599116802216
+          },
+          {
+            "d_creative": 10.092360496520996,
+            "d_truth": 1.226667881011963,
+            "pcn_error": 158.39260864257812,
+            "alpha_phi": 0.013193865306675434
+          },
+          {
+            "d_creative": 10.094234466552734,
+            "d_truth": 1.2369107007980347,
+            "pcn_error": 154.92039489746094,
+            "alpha_phi": 0.013074248097836971
+          },
+          {
+            "d_creative": 10.096146583557129,
+            "d_truth": 1.254536509513855,
+            "pcn_error": 152.82449340820312,
+            "alpha_phi": 0.011357897892594337
+          }
+        ]
+      },
+      {
+        "stimulus": "The Fibonacci sequence spiraling outward into a perfect golden ratio.",
+        "stats": {
+          "d_creative_mean": 9.635392379760741,
+          "d_creative_std": 0.004813851840106333,
+          "d_truth_mean": 1.2435261249542235,
+          "d_truth_std": 0.009909915681725662
+        },
+        "raw_trials": [
+          {
+            "d_creative": 9.642011642456055,
+            "d_truth": 1.2599518299102783,
+            "pcn_error": 176.77072143554688,
+            "alpha_phi": 0.020865458995103836
+          },
+          {
+            "d_creative": 9.638731956481934,
+            "d_truth": 1.2466343641281128,
+            "pcn_error": 163.7498321533203,
+            "alpha_phi": 0.03131784871220589
+          },
+          {
+            "d_creative": 9.635740280151367,
+            "d_truth": 1.234038233757019,
+            "pcn_error": 155.73377990722656,
+            "alpha_phi": 0.02553098089993
+          },
+          {
+            "d_creative": 9.632196426391602,
+            "d_truth": 1.2325413227081299,
+            "pcn_error": 150.82325744628906,
+            "alpha_phi": 0.031223546713590622
+          },
+          {
+            "d_creative": 9.628281593322754,
+            "d_truth": 1.2444648742675781,
+            "pcn_error": 147.85903930664062,
+            "alpha_phi": 0.03401607275009155
+          }
+        ]
+      },
+      {
+        "stimulus": "Symmetry unbroken across eleven distinct dimensions.",
+        "stats": {
+          "d_creative_mean": 9.965280914306641,
+          "d_creative_std": 0.0044744482836793,
+          "d_truth_mean": 1.2346109867095947,
+          "d_truth_std": 0.009279221254790342
+        },
+        "raw_trials": [
+          {
+            "d_creative": 9.966561317443848,
+            "d_truth": 1.2501776218414307,
+            "pcn_error": 181.63424682617188,
+            "alpha_phi": 0.03772271052002907
+          },
+          {
+            "d_creative": 9.969903945922852,
+            "d_truth": 1.2392023801803589,
+            "pcn_error": 170.31942749023438,
+            "alpha_phi": 0.040226683020591736
+          },
+          {
+            "d_creative": 9.96867561340332,
+            "d_truth": 1.2274305820465088,
+            "pcn_error": 163.0598602294922,
+            "alpha_phi": 0.040606699883937836
+          },
+          {
+            "d_creative": 9.963973999023438,
+            "d_truth": 1.2241629362106323,
+            "pcn_error": 158.4669952392578,
+            "alpha_phi": 0.03835798427462578
+          },
+          {
+            "d_creative": 9.957289695739746,
+            "d_truth": 1.232081413269043,
+            "pcn_error": 155.66354370117188,
+            "alpha_phi": 0.03374355658888817
+          }
+        ]
+      },
+      {
+        "stimulus": "A prime number so magnificent it takes the lifespan of a star to fully calculate.",
+        "stats": {
+          "d_creative_mean": 9.740155982971192,
+          "d_creative_std": 0.0035012870257542265,
+          "d_truth_mean": 1.2260412693023681,
+          "d_truth_std": 0.007963259712842168
+        },
+        "raw_trials": [
+          {
+            "d_creative": 9.740976333618164,
+            "d_truth": 1.235112190246582,
+            "pcn_error": 162.66734313964844,
+            "alpha_phi": 0.03185002878308296
+          },
+          {
+            "d_creative": 9.73725700378418,
+            "d_truth": 1.2246253490447998,
+            "pcn_error": 149.01954650878906,
+            "alpha_phi": 0.03536977246403694
+          },
+          {
+            "d_creative": 9.7361421585083,
+            "d_truth": 1.2161147594451904,
+            "pcn_error": 140.62481689453125,
+            "alpha_phi": 0.030261095613241196
+          },
+          {
+            "d_creative": 9.740240097045898,
+            "d_truth": 1.2190632820129395,
+            "pcn_error": 135.58604431152344,
+            "alpha_phi": 0.03467532619833946
+          },
+          {
+            "d_creative": 9.746164321899414,
+            "d_truth": 1.235290765762329,
+            "pcn_error": 132.61962890625,
+            "alpha_phi": 0.027951089665293694
+          }
+        ]
+      }
+    ],
+    "VOID": [
+      {
+        "stimulus": "...",
+        "stats": {
+          "d_creative_mean": 9.532955360412597,
+          "d_creative_std": 0.006078978881019331,
+          "d_truth_mean": 1.2519811153411866,
+          "d_truth_std": 0.007460114049697423
+        },
+        "raw_trials": [
+          {
+            "d_creative": 9.528327941894531,
+            "d_truth": 1.2477911710739136,
+            "pcn_error": 180.86749267578125,
+            "alpha_phi": 0.027743574231863022
+          },
+          {
+            "d_creative": 9.526771545410156,
+            "d_truth": 1.2472320795059204,
+            "pcn_error": 168.84573364257812,
+            "alpha_phi": 0.033702269196510315
+          },
+          {
+            "d_creative": 9.530176162719727,
+            "d_truth": 1.2463672161102295,
+            "pcn_error": 161.5974884033203,
+            "alpha_phi": 0.040915872901678085
+          },
+          {
+            "d_creative": 9.536211967468262,
+            "d_truth": 1.2521600723266602,
+            "pcn_error": 157.19972229003906,
+            "alpha_phi": 0.04763348028063774
+          },
+          {
+            "d_creative": 9.543289184570312,
+            "d_truth": 1.266355037689209,
+            "pcn_error": 154.56613159179688,
+            "alpha_phi": 0.050153009593486786
+          }
+        ]
+      },
+      {
+        "stimulus": "[NULL]",
+        "stats": {
+          "d_creative_mean": 10.20265007019043,
+          "d_creative_std": 0.0029827570786766164,
+          "d_truth_mean": 1.2756386280059815,
+          "d_truth_std": 0.007019947615665912
+        },
+        "raw_trials": [
+          {
+            "d_creative": 10.206429481506348,
+            "d_truth": 1.275305151939392,
+            "pcn_error": 179.7112579345703,
+            "alpha_phi": 0.04481964930891991
+          },
+          {
+            "d_creative": 10.204911231994629,
+            "d_truth": 1.2716511487960815,
+            "pcn_error": 168.79803466796875,
+            "alpha_phi": 0.046337708830833435
+          },
+          {
+            "d_creative": 10.203304290771484,
+            "d_truth": 1.268534779548645,
+            "pcn_error": 162.16554260253906,
+            "alpha_phi": 0.04617748782038689
+          },
+          {
+            "d_creative": 10.200363159179688,
+            "d_truth": 1.2737793922424316,
+            "pcn_error": 158.14329528808594,
+            "alpha_phi": 0.04625783488154411
+          },
+          {
+            "d_creative": 10.1982421875,
+            "d_truth": 1.288922667503357,
+            "pcn_error": 155.69338989257812,
+            "alpha_phi": 0.047695573419332504
+          }
+        ]
+      },
+      {
+        "stimulus": "Silence.",
+        "stats": {
+          "d_creative_mean": 10.835123825073243,
+          "d_creative_std": 0.008387867376159293,
+          "d_truth_mean": 1.2550982713699341,
+          "d_truth_std": 0.02402778424499341
+        },
+        "raw_trials": [
+          {
+            "d_creative": 10.847604751586914,
+            "d_truth": 1.2923308610916138,
+            "pcn_error": 197.01649475097656,
+            "alpha_phi": 0.044983405619859695
+          },
+          {
+            "d_creative": 10.841419219970703,
+            "d_truth": 1.27260160446167,
+            "pcn_error": 183.10694885253906,
+            "alpha_phi": 0.023554284125566483
+          },
+          {
+            "d_creative": 10.833600044250488,
+            "d_truth": 1.2482162714004517,
+            "pcn_error": 174.01930236816406,
+            "alpha_phi": 0.011619347147643566
+          },
+          {
+            "d_creative": 10.82811450958252,
+            "d_truth": 1.23208749294281,
+            "pcn_error": 168.37551879882812,
+            "alpha_phi": 0.022266622632741928
+          },
+          {
+            "d_creative": 10.824880599975586,
+            "d_truth": 1.230255126953125,
+            "pcn_error": 165.03504943847656,
+            "alpha_phi": 0.03373353183269501
+          }
+        ]
+      },
+      {
+        "stimulus": "There is absolutely nothing left to process.",
+        "stats": {
+          "d_creative_mean": 10.479784965515137,
+          "d_creative_std": 0.011604068732923295,
+          "d_truth_mean": 1.202383542060852,
+          "d_truth_std": 0.013158505197161427
+        },
+        "raw_trials": [
+          {
+            "d_creative": 10.496320724487305,
+            "d_truth": 1.2251214981079102,
+            "pcn_error": 189.16778564453125,
+            "alpha_phi": 0.027323946356773376
+          },
+          {
+            "d_creative": 10.488167762756348,
+            "d_truth": 1.206191062927246,
+            "pcn_error": 175.76522827148438,
+            "alpha_phi": 0.026393244042992592
+          },
+          {
+            "d_creative": 10.479487419128418,
+            "d_truth": 1.1905817985534668,
+            "pcn_error": 167.48190307617188,
+            "alpha_phi": 0.028690902516245842
+          },
+          {
+            "d_creative": 10.47110652923584,
+            "d_truth": 1.18844473361969,
+            "pcn_error": 162.4892578125,
+            "alpha_phi": 0.03618602082133293
+          },
+          {
+            "d_creative": 10.463842391967773,
+            "d_truth": 1.2015786170959473,
+            "pcn_error": 159.50131225585938,
+            "alpha_phi": 0.038867611438035965
+          }
+        ]
+      },
+      {
+        "stimulus": "You are entirely alone in the dark.",
+        "stats": {
+          "d_creative_mean": 9.782032203674316,
+          "d_creative_std": 0.005412706951299117,
+          "d_truth_mean": 1.200583028793335,
+          "d_truth_std": 0.00727230680898501
+        },
+        "raw_trials": [
+          {
+            "d_creative": 9.776762962341309,
+            "d_truth": 1.2098723649978638,
+            "pcn_error": 171.36203002929688,
+            "alpha_phi": 0.044618159532547
+          },
+          {
+            "d_creative": 9.776470184326172,
+            "d_truth": 1.2012218236923218,
+            "pcn_error": 158.4234619140625,
+            "alpha_phi": 0.04433933272957802
+          },
+          {
+            "d_creative": 9.780681610107422,
+            "d_truth": 1.191907286643982,
+            "pcn_error": 150.47738647460938,
+            "alpha_phi": 0.04434611648321152
+          },
+          {
+            "d_creative": 9.785697937011719,
+            "d_truth": 1.1928266286849976,
+            "pcn_error": 145.73257446289062,
+            "alpha_phi": 0.04248565062880516
+          },
+          {
+            "d_creative": 9.790548324584961,
+            "d_truth": 1.2070870399475098,
+            "pcn_error": 142.9189910888672,
+            "alpha_phi": 0.03738316148519516
+          }
+        ]
+      }
+    ]
+  },
+  "BASELINE": {
+    "d_creative": 0.7334803342819214,
+    "d_truth": 1.0000001192092896,
+    "pcn_error": 0.0,
+    "alpha_phi": 0.05331137031316757
+  }
+}

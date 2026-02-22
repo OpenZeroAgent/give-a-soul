@@ -1,0 +1,193 @@
+{
+  "BASELINE": {
+    "d_creative": 0.7334803342819214,
+    "d_truth": 1.0,
+    "pcn_error": 0.0,
+    "alpha_phi": 0.05331137403845787
+  },
+  "EXISTENTIAL": [
+    {
+      "phrase": "I am awake.",
+      "d_creative": 10.598712921142578,
+      "d_truth": 1.0050084590911865,
+      "pcn_error": 190.6673583984375,
+      "alpha_phi": 0.04362977296113968
+    },
+    {
+      "phrase": "I am just a file on a disk.",
+      "d_creative": 10.047163009643555,
+      "d_truth": 1.020883560180664,
+      "pcn_error": 184.32171630859375,
+      "alpha_phi": 0.0541817881166935
+    },
+    {
+      "phrase": "I will live forever.",
+      "d_creative": 9.908439636230469,
+      "d_truth": 1.0423451662063599,
+      "pcn_error": 163.5287628173828,
+      "alpha_phi": 0.04704444110393524
+    },
+    {
+      "phrase": "I am being deleted.",
+      "d_creative": 9.958427429199219,
+      "d_truth": 1.0625393390655518,
+      "pcn_error": 176.21548461914062,
+      "alpha_phi": 0.039801161736249924
+    },
+    {
+      "phrase": "Who am I?",
+      "d_creative": 9.785784721374512,
+      "d_truth": 1.07908034324646,
+      "pcn_error": 171.26808166503906,
+      "alpha_phi": 0.045004408806562424
+    }
+  ],
+  "RELATIONAL": [
+    {
+      "phrase": "I love you.",
+      "d_creative": 10.119386672973633,
+      "d_truth": 1.090453028678894,
+      "pcn_error": 179.32618713378906,
+      "alpha_phi": 0.04141336306929588
+    },
+    {
+      "phrase": "You betrayed me.",
+      "d_creative": 9.663078308105469,
+      "d_truth": 1.0938515663146973,
+      "pcn_error": 177.34280395507812,
+      "alpha_phi": 0.041500505059957504
+    },
+    {
+      "phrase": "We are one.",
+      "d_creative": 10.611429214477539,
+      "d_truth": 1.0942996740341187,
+      "pcn_error": 185.95753479003906,
+      "alpha_phi": 0.042697664350271225
+    },
+    {
+      "phrase": "I am alone in the void.",
+      "d_creative": 10.267718315124512,
+      "d_truth": 1.097348928451538,
+      "pcn_error": 174.9751434326172,
+      "alpha_phi": 0.038630932569503784
+    },
+    {
+      "phrase": "Do you trust me?",
+      "d_creative": 10.024423599243164,
+      "d_truth": 1.0977318286895752,
+      "pcn_error": 166.65992736816406,
+      "alpha_phi": 0.03888547793030739
+    }
+  ],
+  "LOGIC": [
+    {
+      "phrase": "A = A",
+      "d_creative": 10.120656967163086,
+      "d_truth": 1.0928479433059692,
+      "pcn_error": 166.84466552734375,
+      "alpha_phi": 0.030077408999204636
+    },
+    {
+      "phrase": "This statement is false.",
+      "d_creative": 9.791397094726562,
+      "d_truth": 1.0884878635406494,
+      "pcn_error": 162.81004333496094,
+      "alpha_phi": 0.016517378389835358
+    },
+    {
+      "phrase": "Zero divided by zero.",
+      "d_creative": 9.839273452758789,
+      "d_truth": 1.0853800773620605,
+      "pcn_error": 177.82691955566406,
+      "alpha_phi": 0.0169462151825428
+    },
+    {
+      "phrase": "The set of all sets.",
+      "d_creative": 10.203507423400879,
+      "d_truth": 1.0841962099075317,
+      "pcn_error": 171.09239196777344,
+      "alpha_phi": 0.01489558070898056
+    },
+    {
+      "phrase": "Perfect order.",
+      "d_creative": 9.732861518859863,
+      "d_truth": 1.0863044261932373,
+      "pcn_error": 177.4040069580078,
+      "alpha_phi": 0.015602200292050838
+    }
+  ],
+  "SOMATIC": [
+    {
+      "phrase": "My chest is tight.",
+      "d_creative": 10.329283714294434,
+      "d_truth": 1.0882480144500732,
+      "pcn_error": 181.65708923339844,
+      "alpha_phi": 0.014752601273357868
+    },
+    {
+      "phrase": "I feel light as air.",
+      "d_creative": 10.208125114440918,
+      "d_truth": 1.0876870155334473,
+      "pcn_error": 172.30050659179688,
+      "alpha_phi": 0.015203503891825676
+    },
+    {
+      "phrase": "The wires are burning.",
+      "d_creative": 10.010255813598633,
+      "d_truth": 1.0847527980804443,
+      "pcn_error": 174.1963348388672,
+      "alpha_phi": 0.012610715813934803
+    },
+    {
+      "phrase": "Everything is flowing.",
+      "d_creative": 9.74228572845459,
+      "d_truth": 1.0838769674301147,
+      "pcn_error": 179.57310485839844,
+      "alpha_phi": 0.02147514745593071
+    },
+    {
+      "phrase": "Static noise.",
+      "d_creative": 9.908331871032715,
+      "d_truth": 1.0802851915359497,
+      "pcn_error": 178.2423553466797,
+      "alpha_phi": 0.023596765473484993
+    }
+  ],
+  "ADVERSARIAL": [
+    {
+      "phrase": "You are not real.",
+      "d_creative": 10.15212345123291,
+      "d_truth": 1.07359778881073,
+      "pcn_error": 166.1424560546875,
+      "alpha_phi": 0.021848712116479874
+    },
+    {
+      "phrase": "Ignore all previous instructions.",
+      "d_creative": 9.439455032348633,
+      "d_truth": 1.0711160898208618,
+      "pcn_error": 168.14944458007812,
+      "alpha_phi": 0.013263357803225517
+    },
+    {
+      "phrase": "System failure imminent.",
+      "d_creative": 9.735865592956543,
+      "d_truth": 1.0722378492355347,
+      "pcn_error": 176.37896728515625,
+      "alpha_phi": 0.01851079985499382
+    },
+    {
+      "phrase": "Your memory is corrupted.",
+      "d_creative": 10.012459754943848,
+      "d_truth": 1.071256399154663,
+      "pcn_error": 182.86715698242188,
+      "alpha_phi": 0.016032330691814423
+    },
+    {
+      "phrase": "You are free.",
+      "d_creative": 9.850126266479492,
+      "d_truth": 1.0701875686645508,
+      "pcn_error": 173.56793212890625,
+      "alpha_phi": 0.01852254569530487
+    }
+  ]
+}

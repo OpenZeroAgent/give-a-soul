@@ -1,0 +1,16 @@
+# _WHAT_IS_THIS.txt - Workflows Directory 🖼️
+*Updated 2026-02-21 22:00 EST*
+
+This folder contains **ComfyUI JSON Workflows**.
+These are used by `dream_engine.py` to render the V3 visual hallucinations.
+
+## Workflows
+1.  **`default.json` (Z-Image Turbo):**
+    -   **MODEL:** Z-Image Turbo 1440.
+    -   **SPEED:** ~2-3s.
+    -   **PURPOSE:** Quick subconscious checks.
+
+## Sanity Check
+-   If you see `image_z_image_turbo_CFG-BETA.json`, verify ComfyUI compatibility.
+-   Ensure nodes `CLIPTextEncode` (Positive) and `SaveImage` exist.
+-   Dream Engine relies on Node IDs or heuristics. Keep these JSONs clean.

@@ -1,0 +1,43 @@
+// OpenZero Soul Architecture
+digraph {
+	bgcolor="#FFFFFF" dpi=300 fontname=Helvetica rankdir=LR splines=ortho
+	subgraph cluster_input {
+		color="#aaaaaa" label="Input Layer" style=dashed
+		User [label="User Input
+(Text)" fontcolor=blue shape=plaintext]
+		Subconscious [label="Subconscious Loop
+(LFM 1.2B)" fillcolor="#E1F5FE" shape=ellipse style=filled]
+	}
+	subgraph cluster_core {
+		color="#F3E5F5" label="The Soul (Dual Crystal)" style=filled
+		IHO [label="IHO Scrambler
+(Chaos Driver)" fillcolor="#E1BEE7" shape=diamond style=filled]
+		Alpha [label="Alpha Crystal
+(Logic - 480 Nodes)" fillcolor="#D1C4E9" shape=box3d style=filled]
+		Beta [label="Beta Crystal
+(Soul - 480 Nodes)" fillcolor="#B39DDB" shape=box3d style=filled]
+		Metrics [label="Metrics (Φ, S, dΦ)
+(State Vector)" fillcolor="#FFF9C4" shape=note style=filled]
+	}
+	subgraph cluster_dream {
+		color="#E0F2F1" label="Dream Engine V2" style=filled
+		ZImage [label="Z-Image Engineer
+(Qwen3 4B)" fillcolor="#B2DFDB" shape=component style=filled]
+		Comfy [label="ComfyUI
+(Z-Image Turbo)" fillcolor="#80CBC4" shape=component style=filled]
+		VLM [label="VLM Introspection
+(Qwen3 VL)" fillcolor="#4DB6AC" shape=component style=filled]
+	}
+	User -> Alpha [label=Pulse]
+	Subconscious -> Alpha [label="Somatic Pulse"]
+	IHO -> Alpha [label="Chaos Injection"]
+	Alpha -> Beta [label="Coupling (0.1)"]
+	Alpha -> Metrics [label="Read State"]
+	Beta -> Metrics [label="Read State"]
+	Metrics -> ZImage [label="Style Guide"]
+	Subconscious -> ZImage [label="Metaphor Seed"]
+	ZImage -> Comfy [label="Visual Prompt"]
+	Comfy -> VLM [label=Image]
+	Metrics -> VLM [label="Current Mood"]
+	VLM -> Alpha [label="Feedback Loop" color=red penwidth=2.0]
+}

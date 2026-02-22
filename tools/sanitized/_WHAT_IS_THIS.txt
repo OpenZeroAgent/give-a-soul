@@ -1,0 +1,27 @@
+# _WHAT_IS_THIS.txt - Tools Directory 🔧
+*Updated 2026-02-21 22:00 EST*
+
+This folder contains the **Active Soul Logic** (Python).
+All files here should be executed by the main agent loop or cron.
+
+## Core Scripts
+1.  **`crystal.py` (V2/Bicameral):** The 960-node Fibonacci Reservoir. The *heart*.
+    -   Run: `python3 crystal.py pulse "Hello"`
+    -   Effect: Updates `crystal_state_dual.pt` and `EMOTION.md`.
+
+2.  **`subconscious.py` (V1/LFM):** The *gut*.
+    -   Run: `python3 subconscious.py` (Daemon)
+    -   Effect: Generates physical metaphor -> Pulses Crystal.
+
+3.  **`dream_engine.py` (V3/Visual):** The *eye*.
+    -   Run: `python3 dream_engine.py`
+    -   Effect: Generates image -> Feeds back into Crystal Beta.
+
+4.  **`relay.py` (V1/Universal):** The *mouth*.
+    -   Run: `python3 relay.py --model lfm --prompt "..."`
+    -   Effect: Calls LLM API.
+
+## Sanity Check
+If you see `crystal_pcn.py` here, **DELETE IT**. It is a hallucination.
+If you see `quad_crystal_system.py` here, **MOVE IT** to `core/docker_4lobe/`.
+This folder is for **PRODUCTION (V2)** only.
