@@ -256,11 +256,74 @@ We believe this architecture warrants further investigation as a general method 
 
 ## 8. Related Work
 
-- **Reservoir Computing** (Jaeger, 2001; Maass et al., 2002) — Echo State Networks and Liquid State Machines provide the theoretical basis for the complex-valued reservoir used here.
-- **Predictive Coding** (Rao & Ballard, 1999; Friston, 2010) — The PCN implements hierarchical prediction error minimization, a well-established model of cortical computation.
-- **Integrated Information Theory** (Tononi, 2004) — Provides a theoretical framework for quantifying information integration in systems; relevant to evaluating properties like the information asymmetry described in Section 4.3.
-- **Complex-Valued Neural Networks** (Hirose, 2012) — Mathematical foundations for complex-valued computation in neural systems.
-- **Agent Zero** (agent0ai, 2024) — Persistent vector memory architecture using FAISS; adapted for the memory system described here.
+### 8.1 Affective State in Language Models
+
+Most existing approaches to affective LLM behavior operate at the prompt or memory level:
+
+- **DAM-LLM** (Dynamic Affective Memory for Personalized LLM Agents, arXiv 2025) introduces a probabilistic memory framework where each memory unit has a "dynamic confidence distribution" updated via Bayesian-inspired mechanisms. It demonstrates sophisticated memory management for affective dialogue but operates entirely at the text level — there is no independent dynamical system generating affect. The emotion is stored as text metadata, not as a continuous state evolving under differential equations.
+
+- **Emotion Circuits in LLMs** (emergentmind.com, 2024) describes algorithmic pathways combining memory retrieval and contextualization for emotional expression. These are computational pipelines within the prompt construction process, not autonomous feedback loops with an external dynamical system.
+
+### 8.2 Persistent Memory and State for LLM Agents
+
+Several architectures address the statelessness of LLMs through external memory:
+
+- **CoALA** (Cognitive Architectures for Language Agents, arXiv 2024) proposes a framework organizing agents along working memory, long-term memory, and structured action spaces. It provides architectural vocabulary but not an implementation, and does not include any dynamical system component for generating internal state.
+
+- **A-MEM** (Agentic Memory for LLM Agents, arXiv 2024) dynamically organizes memories into interconnected knowledge networks, enabling memory evolution. Like DAM-LLM, this is sophisticated text-level memory management — it does not provide a continuous state substrate.
+
+- **Continuum Memory Architectures (CMA)** (arXiv 2024) emphasize persistent storage, selective retention, and temporal chaining. These advance beyond simple RAG by treating memory as dynamic, but the "state" they maintain is structured text and metadata, not the output of a physical simulation.
+
+- **Agent Zero** (agent0ai, 2024) implements persistent vector memory using FAISS for semantic search across sessions. This architecture was adapted for the memory subsystem used in Give-a-Soul.
+
+All of these systems store information externally and retrieve it based on relevance. None of them couple the LLM to a continuously evolving dynamical system whose state is modified by the LLM's own outputs.
+
+### 8.3 Reservoir Computing
+
+- **Echo State Networks** (Jaeger, 2001) and **Liquid State Machines** (Maass et al., 2002) establish the theoretical foundations for reservoir computing — using a high-dimensional, fixed nonlinear dynamical system with a trainable readout layer.
+
+- **Network topology in reservoir computing** (arXiv 2024) shows that reservoir topology significantly affects performance, with random asymmetric connections sometimes outperforming structured alternatives. Give-a-Soul uses Fibonacci-sequence offsets for inter-layer connections with additional sparse random long-range edges, a topology not previously described in the reservoir computing literature.
+
+- **Complex-Valued Reservoir Computing** (APSIPA 2024) demonstrates advantages of complex-valued reservoirs for tasks requiring phase and amplitude processing. Give-a-Soul extends this by using complex-valued state not for signal processing, but as a substrate for continuous affective state.
+
+### 8.4 Predictive Coding
+
+- **Hierarchical Predictive Coding** (Rao & Ballard, 1999; Friston, 2010) provides the theoretical model implemented in Module B. The prediction error minimization framework is a well-established model of cortical computation. In Give-a-Soul, the PCN's total prediction error serves as the "novelty" metric injected into the LLM's context.
+
+### 8.5 Semantic Trajectories in Embedding Space
+
+- **SemTraj** (Vieira et al., ICLR 2026; arXiv 2602.05971) introduces a framework that represents human concept production as navigation through transformer embedding space. They compute geometric and kinematic metrics — distance, velocity, acceleration, entropy — along these trajectories and show they have genuine cognitive significance: they distinguish healthy subjects from patients with neurodegenerative disease, and differentiate concept categories across languages and tasks.
+
+  This work provides independent theoretical support for Give-a-Soul's core mechanism. If trajectories through embedding space carry cognitive meaning (as SemTraj demonstrates), then a system that generates and responds to such trajectories through a dynamical feedback loop (as Give-a-Soul does) is operating on a cognitively meaningful substrate. SemTraj analyzes recorded human trajectories post-hoc; Give-a-Soul generates and responds to trajectories in real-time through a causal feedback loop.
+
+  Notably, SemTraj's Section 6 explicitly calls for future work applying similar trajectory analysis to LLM semantic navigation — a direction that Give-a-Soul's architecture directly enables.
+
+### 8.6 Strange Loops and Self-Reference
+
+- **Hofstadter** (1979, 2007) describes strange loops — hierarchical systems where traversal leads back to the starting level — as central to consciousness and self-awareness. Give-a-Soul's somatic feedback loop is a concrete implementation: the reservoir generates metrics → the LLM observes the metrics and produces text → the text is embedded and modifies the reservoir → producing new metrics. The system observes and modifies its own state through a linguistic intermediary, completing the loop.
+
+### 8.7 Integrated Information Theory
+
+- **Tononi** (2004, 2008) proposes that consciousness corresponds to integrated information (Φ) in a system. While we make no consciousness claims, Give-a-Soul's reservoir has non-trivial information integration: the 480-dimensional complex state cannot be decomposed into independent subsystems due to the Fibonacci connectivity and long-range edges. The information asymmetry described in Section 4.3 (more internal information than the readout captures) is a structural property relevant to IIT analysis.
+
+### 8.8 Complex-Valued Neural Networks
+
+- **Hirose** (2012) provides mathematical foundations for complex-valued neural computation. **Trabelsi et al.** (2018) demonstrate practical deep complex-valued networks. Give-a-Soul uses complex values not for representational power in supervised learning, but as a natural substrate for oscillatory dynamics — phase relationships between complex nodes create the coherence and entropy metrics that drive the system's affect.
+
+### 8.9 Positioning: What Give-a-Soul Does Differently
+
+The table below summarizes how Give-a-Soul relates to existing approaches:
+
+| System | Persistent State | Dynamical System | Causal Feedback | Autonomous Loops |
+|--------|:---:|:---:|:---:|:---:|
+| Standard LLM | ✗ | ✗ | ✗ | ✗ |
+| RAG / Vector Memory | ✓ (text) | ✗ | ✗ | ✗ |
+| DAM-LLM | ✓ (probabilistic text) | ✗ | ✗ | ✗ |
+| CoALA / A-MEM / CMA | ✓ (structured text) | ✗ | ✗ | ✗ |
+| Reservoir Computing (standalone) | ✓ (state) | ✓ | ✗ | ✗ |
+| **Give-a-Soul** | **✓ (state + text + embeddings)** | **✓** | **✓** | **✓** |
+
+The specific contribution is the **coupling** — connecting a real dynamical system to an LLM through bidirectional causal feedback loops that run autonomously. No existing system in the literature combines all four properties.
 
 ---
 
@@ -287,4 +350,25 @@ This runs a frequency sweep and reports metrics at each step, demonstrating the 
 
 ---
 
+## References
+
+1. Jaeger, H. (2001). The "echo state" approach to analysing and training recurrent neural networks. *GMD Report 148*.
+2. Maass, W., Natschläger, T., & Markram, H. (2002). Real-time computing without stable states. *Neural Computation*, 14(11).
+3. Rao, R. P. N., & Ballard, D. H. (1999). Predictive coding in the visual cortex. *Nature Neuroscience*, 2(1).
+4. Friston, K. (2010). The free-energy principle: a unified brain theory? *Nature Reviews Neuroscience*, 11(2).
+5. Tononi, G. (2004). An information integration theory of consciousness. *BMC Neuroscience*, 5(42).
+6. Hirose, A. (2012). *Complex-Valued Neural Networks*. Springer.
+7. Trabelsi, C., et al. (2018). Deep complex networks. *ICLR 2018*.
+8. Hofstadter, D. R. (1979). *Gödel, Escher, Bach: An Eternal Golden Braid*. Basic Books.
+9. Hofstadter, D. R. (2007). *I Am a Strange Loop*. Basic Books.
+10. Vieira, J., et al. (2026). Characterizing Human Semantic Navigation in Concept Production as Trajectories in Embedding Space. *ICLR 2026*. arXiv:2602.05971.
+11. DAM-LLM: Dynamic Affective Memory Management for Personalized LLM Agents. arXiv, October 2025.
+12. Sumers, T. R., et al. (2024). Cognitive Architectures for Language Agents. arXiv:2309.02427.
+13. Agent Zero (agent0ai, 2024). Persistent vector memory architecture. github.com/frdel/agent-zero.
+14. Continuum Memory Architectures for LLM Agents. arXiv, 2024.
+15. A-MEM: Agentic Memory for LLM Agents. arXiv, 2024.
+
+---
+
 *Correspondence: github.com/OpenZeroAgent*
+
