@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+*.egg
+
+# State files (contain live crystal state, do not version)
+data/current_state.safetensors
+core/crystal_state_dual.pt
+*.pt
+*.safetensors
+
+# Runtime logs
+*.log
+server.log
+server_std.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Memory (runtime-generated, user-specific)
+memory/vector_memory.json
+memory/conversations/
+
+# Node modules (web-ui)
+web-ui/node_modules/
+web-ui/dist/
+
+# Legacy reference (too large for repo)
+OpenZero-Legacy_reference/
+OpenZero_scratch/
+projects/
+
+# Archives
+archive/
+
+# Temporary
+/tmp/

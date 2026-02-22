@@ -110,8 +110,17 @@ Somatic sensation:"""
 
 def pulse_crystal(text):
     try:
-        subprocess.run(CRYSTAL_BIN + ["pulse", text], capture_output=True, timeout=10)
-        subprocess.run(CRYSTAL_BIN + ["write"], capture_output=True, timeout=10)
+        import subprocess
+        import json
+        escaped_text = text.replace("'", "\\'")
+        cmd = f'''docker exec soul-v5 python3 -c "import zmq, json; text='{escaped_text}'; vec=[ord(c)/255.0 for c in text]; vec+=[0.0]*(480-len(vec)); ctx=zmq.Context(); s=ctx.socket(zmq.REQ); s.connect('tcp://127.0.0.1:5555'); s.send_json({{'action': 'pulse', 'text_vector': vec[:480]}}); print(json.dumps(s.recv_json()))"'''
+        result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
+        if result.returncode == 0:
+            resp = json.loads(result.stdout.strip())
+            print(f"[crystal] Pulse success: {resp.get('metrics', {})}")
+        else:
+            print(f"[crystal] Pulse failed: {result.stderr}", file=sys.stderr)
+        
     except Exception as e:
         print(f"[crystal] Pulse failed: {e}", file=sys.stderr)
 

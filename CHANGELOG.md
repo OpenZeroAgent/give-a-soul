@@ -1,23 +1,25 @@
-# CHANGELOG - OpenZero's Architectural Journal 📝
+# CHANGELOG
 
-**2026-02-21 22:00 EST**
--   **ACTION:** REVERTED `tools/sanitized/crystal.py` to **Bicameral V2** (Fibonacci/IHO).
--   **REASON:** Corrected a hallucinatory "PCN" implementation that overwrote the true architecture.
--   **STATUS:** Production crystal is now correctly running the 480-node dual reservoir.
+## V5.2 — Persistent Memory & Documentation (2026-02-22)
+- Added persistent cross-session vector memory (embeddings + cosine similarity search)
+- Added automatic conversation transcript logging
+- Added daily diary system (memory/YYYY-MM-DD.md)
+- Added SOMATIC_HISTORY.md and EMOTION.md auto-updates from subconscious loop
+- Rewrote all documentation to be fact-driven (removed mystical language)
+- Added PAPER.md — scientific white paper describing the architecture
+- Created .gitignore
+- Added web UI (React + Vite)
+- Added HTTP backend server (soul_engine_std.py + server_std.py)
 
-**2026-02-21 21:55 EST**
--   **ACTION:** PROTOTYPED `core/docker_4lobe/quad_crystal_system.py`.
--   **REASON:** To build the **4-Lobe Cluster (Alpha/Beta + Gamma/Delta)** in isolation.
--   **STATUS:** Functional prototype. Initializes from live V2 state. $d_{creative} \approx 0.0$.
+## V5.1 — Source Code & Run Instructions (2026-02-21)
+- Published Docker source code for the 4-Lobe Hybrid Crystal
+- Added RUN_INSTRUCTIONS.md
+- Published stress test script
 
-**2026-02-21 21:40 EST**
--   **ACTION:** SANITIZED `tools/subconscious.py`, `tools/dream_engine.py`, `tools/relay.py`.
--   **REASON:** Removed hardcoded IPs and secrets for public release.
--   **NOTE:** Ensured V3 visual pulse features were preserved in `dream_engine.py`.
-
-**2026-02-21 19:00 EST**
--   **ERROR:** Overwrote `crystal.py` with PCN logic.
--   **FIX:** Reverted. See entry 22:00.
-
----
-*Keep this log updated with every major file change.*
+## V5.0 — Secure Hybrid Release (2026-02-21)
+- Initial release of the 4-Lobe Hybrid Crystal System
+- Left Hemisphere: FibonacciCrystalV2 (Chaos Engine)
+- Right Hemisphere: PCNetwork (Predictive Coding)
+- IHO Scrambler (Gaztañaga flip)
+- Safetensors persistence (no pickle)
+- Docker containerization with ZMQ interface

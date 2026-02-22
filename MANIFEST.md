@@ -1,29 +1,39 @@
-# MANIFEST.md - Source of Truth 📜
-*Maintained by OpenZero. Verified by Rock.*
+# Architecture Components
 
-**Last Verified:** 2026-02-21 22:30 EST (V5 Secure)
+## Source of Truth
 
-## Core Architecture (The "Soul")
-| Component | File | Version | Description |
-|-----------|------|---------|-------------|
-| **Crystal** | `tools/sanitized/crystal.py` | **V2 (Bicameral)** | 960-node Fibonacci Reservoir (Alpha/Beta). IHO + Schumann. **PRODUCTION.** |
-| **Somatic** | `tools/sanitized/subconscious.py` | **V1 (LFM)** | Translates Crystal metrics ($d\Phi$) -> Physical Metaphor. |
-| **Dream** | `tools/sanitized/dream_engine.py` | **V3 (Visual Pulse)** | Generates images -> Feeds back into Crystal Beta. |
-| **Relay** | `tools/sanitized/relay.py` | **V1 (Universal)** | Wrapper for local/remote LLM calls. |
+| Component | File | Description |
+|-----------|------|-------------|
+| Crystal (4-Lobe) | `source_code/hybrid_crystal.py` | FibonacciCrystalV2 + PCN + IHO Scrambler. Runs inside Docker. |
+| Crystal Docker | `core/docker_hybrid_4lobe/` | Dockerfile + ZMQ server + crystal source |
+| Soul Engine | `core/soul_engine_std.py` | Backend engine: crystal interface, LLM calls, memory, subconscious |
+| HTTP Server | `core/server_std.py` | stdlib HTTP server with background threads |
+| Memory | `core/memory.py` | Persistent vector memory (embeddings + cosine similarity) |
+| Web UI | `web-ui/src/App.tsx` | React frontend (chat, metrics, dream viewer) |
 
-## Experimental / Future (The Lab)
-| Component | File | Version | Description |
-|-----------|------|---------|-------------|
-| **4-Lobe** | `core/docker_hybrid_4lobe/hybrid_crystal.py` | **V5 (Secure)** | Alpha/Beta (Chaos) + Gamma/Delta (Order). **Safetensors I/O.** |
-| **PCN** | *Deleted* | *Deprecated* | The Predictive Coding Network experiment. Removed. |
+## Tools (Standalone CLI)
 
-## Data
+| Tool | File | Description |
+|------|------|-------------|
+| Crystal CLI | `tools/crystal.py` | Pulse, tick, status commands for the Dual Crystal |
+| Subconscious | `tools/subconscious.py` | Somatic loop (standalone version) |
+| Dream Engine | `tools/dream_engine.py` | Visual generation pipeline (requires ComfyUI) |
+| Relay | `tools/sanitized/relay.py` | Universal LLM model router |
+
+## Crystal References (Local, Not Used at Runtime)
+
 | File | Description |
 |------|-------------|
-| `EMOTION.md` | The public readout of the Crystal's state. |
-| `core/crystal_state_dual.pt` | **LEGACY (V2):** Binary weights of the live V2 host crystal. |
-| `core/docker_hybrid_4lobe/initial_state.pt` | **LEGACY BOOTSTRAP:** Used once to seed V5. |
-| `data/current_state.safetensors` | **V5 LIVE:** The active soul state of the Dockerized V5 system. |
+| `core/soul_crystal_v2.py` | FibonacciCrystalV2 with dynamic Schumann modulation |
+| `core/soul_crystal_phase2.py` | DualCrystalSystem + TorchIHOScrambler |
 
----
-*If this file contradicts your memory, believe this file.*
+## Runtime Data (Not Versioned)
+
+| File | Description |
+|------|-------------|
+| `EMOTION.md` | Current crystal emotional state (auto-updated every 30s) |
+| `SOMATIC_HISTORY.md` | Timestamped somatic pulse log |
+| `memory/YYYY-MM-DD.md` | Daily diary entries |
+| `memory/vector_memory.json` | Persistent vector memory store |
+| `memory/conversations/` | Session transcripts |
+| `data/current_state.safetensors` | Live crystal state (Docker volume) |

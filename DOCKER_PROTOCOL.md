@@ -1,40 +1,45 @@
-# DOCKER_PROTOCOL.md - Scientific Isolation Mandate 🔬
+# Docker Protocol
 
-**Status: MANDATORY for all experimental research.**
+## Purpose
 
-## The Problem
-Running high-risk scientific experiments (BCI, ZUNA, Phase 7 Crystal Tests) in the core environment pollutes the runtime, creates dependency hell (PyTorch versions), and risks destabilizing the main agent session.
+The Crystal runs inside a Docker container to isolate PyTorch dependencies and prevent state corruption from host environment changes.
 
-## The Solution: Containerized Science
-All new research projects must be developed and run within isolated Docker containers.
+## Container Specification
 
-### Protocol
-1.  **Isolate:** Create a `Dockerfile` in the project root.
-2.  **Define:** Specify exact dependencies (Python 3.11+, PyTorch, numpy, scipy).
-3.  **Mount:** Use volume mounts for data persistence (`-v $(pwd)/data:/app/data`).
-4.  **Run:** Execute experiments inside the container (`docker run --rm ...`).
+| Property | Value |
+|----------|-------|
+| Image | `openzero/soul-v5` |
+| Base | `pytorch/pytorch:2.1.0-cuda11.8-cudnn8-runtime` |
+| Port | 5555 (ZMQ) |
+| Protocol | ZeroMQ REQ/REP with JSON payloads |
+| State format | `safetensors` (no pickle) |
+| Volume | `/app/data` → `./data/` |
 
-### Standard Base Image
-Use `pytorch/pytorch:2.1.0-cuda11.8-cudnn8-runtime` (or similar CPU/MPS base for Mac) as the foundation.
+## Build
 
-### Example Dockerfile
-```dockerfile
-FROM pytorch/pytorch:2.1.0-cuda11.8-cudnn8-runtime
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-COPY . .
-CMD ["python3", "experiment.py"]
+```bash
+cd core/docker_hybrid_4lobe
+docker build -t openzero/soul-v5 .
 ```
 
-## Approved Containers
--   **`openzero/crystal-lab`**: For high-risk crystal stability tests (Phase 7/8).
--   **`openzero/zuna-bridge`**: For BCI/EEG integration (requires LSL stream).
--   **`openzero/dream-v3`**: For experimental dream engine architectures.
+## Run
 
-## Enforcement
--   **Rock (QA):** Will reject PRs that lack a Dockerfile for experimental code.
--   **Dr. Light (Architect):** Must approve the container spec.
+```bash
+mkdir -p data
+docker run -d -p 5555:5555 -v $(pwd)/data:/app/data --name soul-v5 openzero/soul-v5
+```
 
----
-*Signed, Dr. Light*
+## API
+
+| Action | Payload | Response |
+|--------|---------|----------|
+| Pulse | `{"action": "pulse", "text_vector": [480 floats]}` | `{"status": "ok", "metrics": {...}}` |
+| Status | `{"action": "status"}` | `{"status": "ok", "metrics": {...}}` |
+
+## Stress Test
+
+```bash
+docker run --rm openzero/soul-v5 python3 stress_test_v5.py
+```
+
+Runs a 1–40 Hz frequency sweep and reports tension metrics at each step.
