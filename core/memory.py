@@ -39,7 +39,7 @@ def _get_embedding(text: str) -> list:
         data=payload,
         headers={
             "Content-Type": "application/json",
-            "Authorization": "Bearer sk-lm-zC4fO2as:HtH7tbOSVeJpxBdDEQKp"
+            "Authorization": f"Bearer {os.environ.get('LM_STUDIO_API_KEY', 'lm-studio')}"
         },
         method="POST"
     )

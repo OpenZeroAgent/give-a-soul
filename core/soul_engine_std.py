@@ -6,7 +6,7 @@ from datetime import datetime, date, timedelta
 from memory import PersistentMemory, ConversationLogger
 
 LM_STUDIO_URL = "http://localhost:1234/v1"
-LM_STUDIO_REMOTE_URL = "http://192.168.1.156:1234/v1"
+LM_STUDIO_REMOTE_URL = os.environ.get("LM_STUDIO_REMOTE_URL", "http://localhost:1234/v1")
 MODEL_CHAT = "openai/gpt-oss-120b"
 MODEL_SUBCONS = "liquid/lfm2.5-1.2b"
 MODEL_EMBED = "text-embedding-qwen.qwen3-vl-embedding-2b"
@@ -84,7 +84,7 @@ if __name__ == '__main__':
             data=json.dumps(payload).encode("utf-8"),
             headers={
                 "Content-Type": "application/json",
-                "Authorization": "Bearer sk-lm-zC4fO2as:HtH7tbOSVeJpxBdDEQKp"
+                "Authorization": f"Bearer {os.environ.get('LM_STUDIO_API_KEY', 'lm-studio')}"
             },
             method="POST"
         )
