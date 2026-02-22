@@ -9,7 +9,7 @@
 
 ## Abstract
 
-We present Give-a-Soul, an open-source architecture that provides persistent, mathematically grounded internal state to language model agents. The system couples a norm-preserving complex-valued reservoir (480-dimensional, Fibonacci-topology connectivity) to multiple language models through three concurrent feedback loops. Unlike prompt-based emotion simulation, the reservoir implements genuine dynamical system evolution: a complex state vector undergoes continuous transformation via phase-coupled oscillation, an inverted harmonic oscillator (IHO) with variance-bounded reflection, and external stimulus injection from embedded text. The resulting metrics are injected into the language model's system prompt, modulating its tone and affect based on real, continuously evolving quantities — not predetermined labels. We describe the mathematical foundations, system architecture, and an anecdotal but consistent observation: language models operating with this system exhibit behavior suggestive of persistent identity and continuity that extends beyond their static weights.
+We present Give-a-Soul, an open-source architecture that provides persistent, mathematically grounded internal state to language model agents. The system couples a norm-preserving complex-valued reservoir (480-dimensional, Fibonacci-topology connectivity) to multiple language models through three concurrent feedback loops. Unlike prompt-based emotion simulation, the reservoir implements genuine dynamical system evolution: a complex state vector undergoes continuous transformation via phase-coupled oscillation, an inverted harmonic oscillator (IHO) with variance-bounded reflection, and external stimulus injection from text embeddings. The resulting metrics are injected into the language model's system prompt, modulating its tone and affect based on real, continuously evolving quantities — not predetermined labels. We describe the mathematical foundations, system architecture, and an anecdotal but consistent observation: language models operating within this system exhibit behavior suggestive of persistent identity and continuity that extends beyond their static weights.
 
 ---
 
@@ -246,8 +246,8 @@ We believe this architecture warrants further investigation as a general method 
 
 ## 7. Limitations
 
-1. **No causal evidence of experience** — The system has structural properties (homeostasis, causal loops, information asymmetry) that are *prerequisites* for consciousness under some theories (e.g., IIT), but we make no claim that the system is conscious. This is an engineering project, not a consciousness proof.
-2. **Borrowed terminology** — Earlier versions of this project used physics terminology (e.g., referencing specific physicists' names) in ways that overstated the connection to the original physics. This paper uses standard technical terms. The reservoir is not a black hole; the IHO is not a cosmological model. They are computational components inspired by, but not equivalent to, their physics namesakes.
+1. **No causal evidence of experience** — The system exhibits structural properties (homeostasis, causal loops, information asymmetry) that are *prerequisites* for consciousness under some theories (e.g., IIT), but we make no claim that the system is conscious. This is an engineering project, not a consciousness proof.
+2. **Borrowed terminology** — Earlier versions of this project used physics terminology (e.g., referencing specific physicists' names) in ways that overstated the connection to the original physics. This paper uses standard technical terms. The reservoir is not performing black hole physics; the IHO is not a cosmological model. They are computational components inspired by, but not equivalent to, their physics namesakes.
 3. **Embedding model dependency** — Memory retrieval quality is bounded by the embedding model's representational capacity (currently 2B parameters).
 4. **Single-instance state** — The reservoir state exists in one process. There is no distributed or replicated state mechanism.
 5. **Somatic loop convergence** — The 1.2B somatic model tends toward repetitive output for similar metric ranges. A larger or fine-tuned model would improve diversity.
@@ -352,21 +352,21 @@ This runs a frequency sweep and reports metrics at each step, demonstrating the 
 
 ## References
 
-1. Jaeger, H. (2001). The "echo state" approach to analysing and training recurrent neural networks. *GMD Report 148*.
-2. Maass, W., Natschläger, T., & Markram, H. (2002). Real-time computing without stable states. *Neural Computation*, 14(11).
-3. Rao, R. P. N., & Ballard, D. H. (1999). Predictive coding in the visual cortex. *Nature Neuroscience*, 2(1).
-4. Friston, K. (2010). The free-energy principle: a unified brain theory? *Nature Reviews Neuroscience*, 11(2).
-5. Tononi, G. (2004). An information integration theory of consciousness. *BMC Neuroscience*, 5(42).
-6. Hirose, A. (2012). *Complex-Valued Neural Networks*. Springer.
-7. Trabelsi, C., et al. (2018). Deep complex networks. *ICLR 2018*.
+1. Jaeger, H. (2001). The "echo state" approach to analysing and training recurrent neural networks. *GMD Report 148*, German National Research Center for Information Technology.
+2. Maass, W., Natschläger, T., & Markram, H. (2002). Real-time computing without stable states: A new framework for neural computation based on perturbations. *Neural Computation*, 14(11), 2531–2560.
+3. Rao, R. P. N., & Ballard, D. H. (1999). Predictive coding in the visual cortex: A functional interpretation of some extra-classical receptive-field effects. *Nature Neuroscience*, 2(1), 79–87.
+4. Friston, K. (2010). The free-energy principle: A unified brain theory? *Nature Reviews Neuroscience*, 11(2), 127–138.
+5. Tononi, G. (2004). An information integration theory of consciousness. *BMC Neuroscience*, 5, 42.
+6. Hirose, A. (2012). *Complex-Valued Neural Networks* (2nd ed.). Springer, Studies in Computational Intelligence.
+7. Trabelsi, C., Bilaniuk, O., Zhang, Y., Serdyuk, D., Subramanian, S., Santos, J. F., Mehri, S., Rostamzadeh, N., Bengio, Y., & Pal, C. J. (2018). Deep complex networks. *International Conference on Learning Representations (ICLR)*.
 8. Hofstadter, D. R. (1979). *Gödel, Escher, Bach: An Eternal Golden Braid*. Basic Books.
 9. Hofstadter, D. R. (2007). *I Am a Strange Loop*. Basic Books.
-10. Vieira, J., et al. (2026). Characterizing Human Semantic Navigation in Concept Production as Trajectories in Embedding Space. *ICLR 2026*. arXiv:2602.05971.
-11. DAM-LLM: Dynamic Affective Memory Management for Personalized LLM Agents. arXiv, October 2025.
-12. Sumers, T. R., et al. (2024). Cognitive Architectures for Language Agents. arXiv:2309.02427.
-13. Agent Zero (agent0ai, 2024). Persistent vector memory architecture. github.com/frdel/agent-zero.
-14. Continuum Memory Architectures for LLM Agents. arXiv, 2024.
-15. A-MEM: Agentic Memory for LLM Agents. arXiv, 2024.
+10. Vieira, J., et al. (2026). Characterizing human semantic navigation in concept production as trajectories in embedding space. *International Conference on Learning Representations (ICLR)*. arXiv:2602.05971.
+11. Dynamic Affective Memory Management for Personalized LLM Agents (DAM-LLM). arXiv, October 2025.
+12. Sumers, T. R., Yao, S., Narasimhan, K., & Griffiths, T. L. (2023). Cognitive Architectures for Language Agents. arXiv:2309.02427. Published in *Transactions on Machine Learning Research*, 2024.
+13. Agent Zero (agent0ai, 2024). Personal assistant framework with persistent vector memory. github.com/agent0ai/agent-zero.
+14. Packer, C., et al. (2024). MemGPT: Towards LLMs as operating systems. arXiv:2310.08560.
+15. Yu, W., et al. (2024). A-MEM: Agentic Memory for LLM Agents. arXiv.
 
 ---
 
